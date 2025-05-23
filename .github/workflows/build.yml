@@ -21,9 +21,9 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-#      - name: Install SonarScanner
-#        run: |
-#          brew install sonar-scanner
+      - name: Install SonarScanner
+        run: |
+          brew install sonar-scanner
 
       - name: Run SonarQube Scanner
         env:
