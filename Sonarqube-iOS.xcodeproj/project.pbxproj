@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E66CC51C2DE06CD400627261 /* sonar-project.properties in Resources */ = {isa = PBXBuildFile; fileRef = E66CC51B2DE06CD400627261 /* sonar-project.properties */; };
+		E66CC51E2DE06DC900627261 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E66CC51D2DE06DC900627261 /* .swiftlint.yml */; };
+		E66CC5222DE071DF00627261 /* build.yml in Resources */ = {isa = PBXBuildFile; fileRef = E66CC5212DE071DF00627261 /* build.yml */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E66CC4FF2DE06B6600627261 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +33,9 @@
 		E66CC4EE2DE06B6200627261 /* Sonarqube-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonarqube-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66CC4FE2DE06B6600627261 /* Sonarqube-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sonarqube-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66CC5082DE06B6600627261 /* Sonarqube-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sonarqube-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66CC51B2DE06CD400627261 /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "sonar-project.properties"; sourceTree = "<group>"; };
+		E66CC51D2DE06DC900627261 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		E66CC5212DE071DF00627261 /* build.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = build.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +84,9 @@
 		E66CC4E52DE06B6200627261 = {
 			isa = PBXGroup;
 			children = (
+				E66CC51F2DE071B600627261 /* .github */,
+				E66CC51D2DE06DC900627261 /* .swiftlint.yml */,
+				E66CC51B2DE06CD400627261 /* sonar-project.properties */,
 				E66CC4F02DE06B6200627261 /* Sonarqube-iOS */,
 				E66CC5012DE06B6600627261 /* Sonarqube-iOSTests */,
 				E66CC50B2DE06B6600627261 /* Sonarqube-iOSUITests */,
@@ -90,6 +102,22 @@
 				E66CC5082DE06B6600627261 /* Sonarqube-iOSUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E66CC51F2DE071B600627261 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				E66CC5202DE071C000627261 /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		E66CC5202DE071C000627261 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				E66CC5212DE071DF00627261 /* build.yml */,
+			);
+			path = workflows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +240,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66CC5222DE071DF00627261 /* build.yml in Resources */,
+				E66CC51E2DE06DC900627261 /* .swiftlint.yml in Resources */,
+				E66CC51C2DE06CD400627261 /* sonar-project.properties in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
